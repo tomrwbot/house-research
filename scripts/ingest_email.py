@@ -99,23 +99,65 @@ class EmailPropertyIngestor:
             logger.error(f"Failed to save properties: {e}")
             return False
     
+    def validate_url(self, url: str) -> bool:
+        """
+        Validate that a URL is a valid realestate.com.au property link
+        
+        Args:
+            url: URL to validate
+        
+        Returns:
+            True if URL appears valid, False otherwise
+        """
+        if not url:
+            return False
+        
+        # Check basic format
+        if not url.startswith(('http://', 'https://')):
+            return False
+        
+        if 'realestate.com.au' not in url:
+            return False
+        
+        if '/property-' not in url:
+            return False
+        
+        # URL should have some content after /property-
+        parts = url.split('/property-')
+        if len(parts) < 2 or not parts[1]:
+            return False
+        
+        logger.debug(f"URL validation passed: {url}")
+        return True
+    
     def extract_url(self, content: str) -> Optional[str]:
         """
         Extract realestate.com.au URL from email content
+        
+        Handles:
+        - URLs with and without www prefix
+        - Both http and https protocols
+        - URLs with query parameters (stripped)
+        - Multiple URLs (returns first)
         
         Args:
             content: Email text content
         
         Returns:
-            realestate.com.au URL if found, None otherwise
+            Clean realestate.com.au URL if found, None otherwise
         """
         # Match realestate.com.au URLs
         # Pattern: https://www.realestate.com.au/property-TYPE-LOCATION-ID
+        # Captures URL without query parameters
         pattern = r'https?://(?:www\.)?realestate\.com\.au/property-[a-z0-9\-]+'
         match = re.search(pattern, content, re.IGNORECASE)
         
         if match:
             url = match.group(0)
+            
+            # Clean query parameters and fragments
+            url = url.split('?')[0].split('#')[0]
+            
             logger.info(f"Extracted URL: {url}")
             return url
         
@@ -123,7 +165,7 @@ class EmailPropertyIngestor:
     
     def ingest_property(self, property_data: Dict[str, Any]) -> bool:
         """
-        Ingest a single property, preserving URLs
+        Ingest a single property, preserving and validating URLs
         
         Args:
             property_data: Property data dict (must have 'id' or 'address')
@@ -145,6 +187,13 @@ class EmailPropertyIngestor:
             prop_id = address.replace(' ', '_').lower()[:50]
             property_data['id'] = prop_id
         
+        # Validate URL if present
+        if 'url' in property_data and property_data['url']:
+            if not self.validate_url(property_data['url']):
+                logger.warning(f"Invalid URL format for property {prop_id}: {property_data['url']}")
+                # Don't store invalid URLs
+                del property_data['url']
+        
         # Check if property already exists
         if prop_id in self.properties:
             logger.warning(f"Property {prop_id} already exists, updating")
@@ -156,7 +205,10 @@ class EmailPropertyIngestor:
         # Store property
         self.properties[prop_id] = property_data
         self.ingested_count += 1
-        logger.info(f"Ingested property {prop_id}: {address}")
+        
+        # Log with URL status
+        url_status = f"with URL {property_data.get('url', 'NONE')}" if 'url' in property_data else "(no URL)"
+        logger.info(f"Ingested property {prop_id}: {address} {url_status}")
         
         return True
     
