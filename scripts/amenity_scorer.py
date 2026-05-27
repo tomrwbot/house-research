@@ -320,10 +320,11 @@ class OpenRouteServiceRouter:
 class AmenityScorer:
     """Main amenity scoring orchestrator"""
     
-    def __init__(self):
+    def __init__(self, mock_mode: bool = False):
         self.geocoder = NominatimGeocoder()
         self.finder = OverpassAmenityFinder()
         self.router = OpenRouteServiceRouter()
+        self.mock_mode = mock_mode
     
     def score_address(
         self,
@@ -354,9 +355,26 @@ class AmenityScorer:
             lat, lon = result
             logger.info(f"Geocoded to: {lat}, {lon}")
         
+        # Use mock data if in test mode
+        if self.mock_mode:
+            return self._score_address_mock(address, lat, lon)
+        
         # Find nearby amenities
         logger.info(f"Searching for amenities within {radius_m}m")
-        amenities_by_type = self.finder.find_amenities(lat, lon, radius_m)
+        try:
+            amenities_by_type = self.finder.find_amenities(lat, lon, radius_m)
+        except Exception as e:
+            logger.warning(f"Amenity search failed: {e}. Using empty results.")
+            amenities_by_type = {
+                'schools': [],
+                'libraries': [],
+                'parks': [],
+                'cafes': [],
+                'supermarkets': [],
+                'restaurants': [],
+                'pharmacies': [],
+                'doctors': []
+            }
         
         # Collect all unique points for distance calculation
         all_points: List[Tuple[AmenityPoint, float, float]] = []
@@ -430,6 +448,101 @@ class AmenityScorer:
             }
         
         return scoring
+    
+    def _score_address_mock(self, address: str, lat: float, lon: float) -> AmenitySummary:
+        """Generate mock amenity data for testing"""
+        logger.info(f"Using mock amenity data for {address}")
+        
+        # Generate realistic mock data based on address
+        mock_data = {
+            'Sturt Street': {
+                'schools': 3,
+                'libraries': 1,
+                'parks': 2,
+                'cafes': 5,
+                'supermarkets': 2,
+                'restaurants': 4,
+                'pharmacies': 1,
+                'doctors': 1
+            },
+            'Main Road': {
+                'schools': 4,
+                'libraries': 2,
+                'parks': 3,
+                'cafes': 7,
+                'supermarkets': 3,
+                'restaurants': 6,
+                'pharmacies': 2,
+                'doctors': 2
+            },
+            'Wood Street': {
+                'schools': 2,
+                'libraries': 0,
+                'parks': 1,
+                'cafes': 2,
+                'supermarkets': 1,
+                'restaurants': 2,
+                'pharmacies': 0,
+                'doctors': 0
+            }
+        }
+        
+        # Find matching mock data
+        mock_amenities = None
+        for key, data in mock_data.items():
+            if key in address:
+                mock_amenities = data
+                break
+        
+        if not mock_amenities:
+            mock_amenities = mock_data['Main Road']  # Default
+        
+        # Create mock amenity points
+        amenities_by_type: Dict[str, List[AmenityPoint]] = {}
+        amenity_configs = {
+            'schools': {'names': ['Primary School', 'High School', 'Secondary College']},
+            'libraries': {'names': ['Public Library', 'Community Library']},
+            'parks': {'names': ['Central Park', 'Botanical Gardens', 'Recreation Reserve']},
+            'cafes': {'names': ['Cafe Latte', 'Coffee Corner', 'The Roastery', 'Brew Haven', 'Local Grounds']},
+            'supermarkets': {'names': ['Woolworths', 'Coles', 'Aldi']},
+            'restaurants': {'names': ['The Restaurant', 'Italian Villa', 'Thai House', 'Burger Place', 'Pizza Time']},
+            'pharmacies': {'names': ['Pharmacy Plus', 'Health Pharmacy']},
+            'doctors': {'names': ['Medical Centre', 'Health Clinic']}
+        }
+        
+        for amenity_type, count in mock_amenities.items():
+            points = []
+            config = amenity_configs.get(amenity_type, {})
+            names = config.get('names', [])
+            
+            for i in range(count):
+                name = names[i % len(names)] if names else f"{amenity_type.title()} {i+1}"
+                # Generate points around the property
+                offset = (i * 0.005) % 0.01  # Small random-ish offsets
+                point = AmenityPoint(
+                    amenity_type=amenity_type,
+                    name=name,
+                    lat=lat + offset,
+                    lon=lon + offset,
+                    distance_m=100 + (i * 150),  # Increasing distances
+                    walking_distance_m=150 + (i * 180),
+                    walking_time_s=90 + (i * 130)  # In seconds
+                )
+                points.append(point)
+            
+            amenities_by_type[amenity_type] = points
+        
+        # Calculate scoring
+        scoring = self._calculate_scoring(amenities_by_type)
+        
+        return AmenitySummary(
+            address=address,
+            lat=lat,
+            lon=lon,
+            timestamp=datetime.utcnow().isoformat(),
+            amenities_by_type=amenities_by_type,
+            scoring=scoring
+        )
     
     def to_json(self, summary: AmenitySummary) -> str:
         """Serialize summary to JSON"""

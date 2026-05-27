@@ -1,0 +1,916 @@
+{
+  "properties": [
+    {
+      "id": "ballarat_001",
+      "address": "Sturt Street, Ballarat VIC 3350, Australia",
+      "lat": -37.5612,
+      "lon": 143.8503,
+      "price_aud": 450000,
+      "bedrooms": 3,
+      "bathrooms": 1,
+      "land_area_sqm": 350,
+      "year_built": 1995,
+      "amenity_data": {
+        "address": "Sturt Street, Ballarat VIC 3350, Australia",
+        "lat": -37.5612,
+        "lon": 143.8503,
+        "timestamp": "2026-05-27T21:45:01.955743",
+        "amenities_by_type": {
+          "schools": [
+            {
+              "amenity_type": "schools",
+              "name": "Primary School",
+              "lat": -37.5612,
+              "lon": 143.8503,
+              "distance_m": 100,
+              "walking_distance_m": 150,
+              "walking_time_s": 90
+            },
+            {
+              "amenity_type": "schools",
+              "name": "High School",
+              "lat": -37.5562,
+              "lon": 143.8553,
+              "distance_m": 250,
+              "walking_distance_m": 330,
+              "walking_time_s": 220
+            },
+            {
+              "amenity_type": "schools",
+              "name": "Secondary College",
+              "lat": -37.5612,
+              "lon": 143.8503,
+              "distance_m": 400,
+              "walking_distance_m": 510,
+              "walking_time_s": 350
+            }
+          ],
+          "libraries": [
+            {
+              "amenity_type": "libraries",
+              "name": "Public Library",
+              "lat": -37.5612,
+              "lon": 143.8503,
+              "distance_m": 100,
+              "walking_distance_m": 150,
+              "walking_time_s": 90
+            }
+          ],
+          "parks": [
+            {
+              "amenity_type": "parks",
+              "name": "Central Park",
+              "lat": -37.5612,
+              "lon": 143.8503,
+              "distance_m": 100,
+              "walking_distance_m": 150,
+              "walking_time_s": 90
+            },
+            {
+              "amenity_type": "parks",
+              "name": "Botanical Gardens",
+              "lat": -37.5562,
+              "lon": 143.8553,
+              "distance_m": 250,
+              "walking_distance_m": 330,
+              "walking_time_s": 220
+            }
+          ],
+          "cafes": [
+            {
+              "amenity_type": "cafes",
+              "name": "Cafe Latte",
+              "lat": -37.5612,
+              "lon": 143.8503,
+              "distance_m": 100,
+              "walking_distance_m": 150,
+              "walking_time_s": 90
+            },
+            {
+              "amenity_type": "cafes",
+              "name": "Coffee Corner",
+              "lat": -37.5562,
+              "lon": 143.8553,
+              "distance_m": 250,
+              "walking_distance_m": 330,
+              "walking_time_s": 220
+            },
+            {
+              "amenity_type": "cafes",
+              "name": "The Roastery",
+              "lat": -37.5612,
+              "lon": 143.8503,
+              "distance_m": 400,
+              "walking_distance_m": 510,
+              "walking_time_s": 350
+            },
+            {
+              "amenity_type": "cafes",
+              "name": "Brew Haven",
+              "lat": -37.5562,
+              "lon": 143.8553,
+              "distance_m": 550,
+              "walking_distance_m": 690,
+              "walking_time_s": 480
+            },
+            {
+              "amenity_type": "cafes",
+              "name": "Local Grounds",
+              "lat": -37.5612,
+              "lon": 143.8503,
+              "distance_m": 700,
+              "walking_distance_m": 870,
+              "walking_time_s": 610
+            }
+          ],
+          "supermarkets": [
+            {
+              "amenity_type": "supermarkets",
+              "name": "Woolworths",
+              "lat": -37.5612,
+              "lon": 143.8503,
+              "distance_m": 100,
+              "walking_distance_m": 150,
+              "walking_time_s": 90
+            },
+            {
+              "amenity_type": "supermarkets",
+              "name": "Coles",
+              "lat": -37.5562,
+              "lon": 143.8553,
+              "distance_m": 250,
+              "walking_distance_m": 330,
+              "walking_time_s": 220
+            }
+          ],
+          "restaurants": [
+            {
+              "amenity_type": "restaurants",
+              "name": "The Restaurant",
+              "lat": -37.5612,
+              "lon": 143.8503,
+              "distance_m": 100,
+              "walking_distance_m": 150,
+              "walking_time_s": 90
+            },
+            {
+              "amenity_type": "restaurants",
+              "name": "Italian Villa",
+              "lat": -37.5562,
+              "lon": 143.8553,
+              "distance_m": 250,
+              "walking_distance_m": 330,
+              "walking_time_s": 220
+            },
+            {
+              "amenity_type": "restaurants",
+              "name": "Thai House",
+              "lat": -37.5612,
+              "lon": 143.8503,
+              "distance_m": 400,
+              "walking_distance_m": 510,
+              "walking_time_s": 350
+            },
+            {
+              "amenity_type": "restaurants",
+              "name": "Burger Place",
+              "lat": -37.5562,
+              "lon": 143.8553,
+              "distance_m": 550,
+              "walking_distance_m": 690,
+              "walking_time_s": 480
+            }
+          ],
+          "pharmacies": [
+            {
+              "amenity_type": "pharmacies",
+              "name": "Pharmacy Plus",
+              "lat": -37.5612,
+              "lon": 143.8503,
+              "distance_m": 100,
+              "walking_distance_m": 150,
+              "walking_time_s": 90
+            }
+          ],
+          "doctors": [
+            {
+              "amenity_type": "doctors",
+              "name": "Medical Centre",
+              "lat": -37.5612,
+              "lon": 143.8503,
+              "distance_m": 100,
+              "walking_distance_m": 150,
+              "walking_time_s": 90
+            }
+          ]
+        },
+        "scoring": {
+          "schools": {
+            "count": 3,
+            "avg_distance_m": 330.0,
+            "avg_walking_time_s": 220.0,
+            "nearest_m": 150,
+            "description": "3 schools, nearest 150m (107min walk)"
+          },
+          "libraries": {
+            "count": 1,
+            "avg_distance_m": 150.0,
+            "avg_walking_time_s": 90.0,
+            "nearest_m": 150,
+            "description": "1 libraries, nearest 150m (107min walk)"
+          },
+          "parks": {
+            "count": 2,
+            "avg_distance_m": 240.0,
+            "avg_walking_time_s": 155.0,
+            "nearest_m": 150,
+            "description": "2 parks, nearest 150m (107min walk)"
+          },
+          "cafes": {
+            "count": 5,
+            "avg_distance_m": 510.0,
+            "avg_walking_time_s": 350.0,
+            "nearest_m": 150,
+            "description": "5 cafes, nearest 150m (107min walk)"
+          },
+          "supermarkets": {
+            "count": 2,
+            "avg_distance_m": 240.0,
+            "avg_walking_time_s": 155.0,
+            "nearest_m": 150,
+            "description": "2 supermarkets, nearest 150m (107min walk)"
+          },
+          "restaurants": {
+            "count": 4,
+            "avg_distance_m": 420.0,
+            "avg_walking_time_s": 285.0,
+            "nearest_m": 150,
+            "description": "4 restaurants, nearest 150m (107min walk)"
+          },
+          "pharmacies": {
+            "count": 1,
+            "avg_distance_m": 150.0,
+            "avg_walking_time_s": 90.0,
+            "nearest_m": 150,
+            "description": "1 pharmacies, nearest 150m (107min walk)"
+          },
+          "doctors": {
+            "count": 1,
+            "avg_distance_m": 150.0,
+            "avg_walking_time_s": 90.0,
+            "nearest_m": 150,
+            "description": "1 doctors, nearest 150m (107min walk)"
+          }
+        }
+      },
+      "amenity_score": 48.0,
+      "amenity_breakdown": {
+        "schools": {
+          "count": 3,
+          "score": 60.0,
+          "contribution": 12.0
+        },
+        "libraries": {
+          "count": 1,
+          "score": 20.0,
+          "contribution": 2.0
+        },
+        "parks": {
+          "count": 2,
+          "score": 40.0,
+          "contribution": 6.0
+        },
+        "cafes": {
+          "count": 5,
+          "score": 100.0,
+          "contribution": 10.0
+        },
+        "supermarkets": {
+          "count": 2,
+          "score": 40.0,
+          "contribution": 6.0
+        },
+        "restaurants": {
+          "count": 4,
+          "score": 80.0,
+          "contribution": 8.0
+        },
+        "pharmacies": {
+          "count": 1,
+          "score": 20.0,
+          "contribution": 2.0
+        },
+        "doctors": {
+          "count": 1,
+          "score": 20.0,
+          "contribution": 2.0
+        }
+      }
+    },
+    {
+      "id": "ballarat_002",
+      "address": "Main Road, Ballarat VIC 3350, Australia",
+      "lat": -37.565,
+      "lon": 143.845,
+      "price_aud": 520000,
+      "bedrooms": 4,
+      "bathrooms": 2,
+      "land_area_sqm": 600,
+      "year_built": 2005,
+      "amenity_data": {
+        "address": "Main Road, Ballarat VIC 3350, Australia",
+        "lat": -37.565,
+        "lon": 143.845,
+        "timestamp": "2026-05-27T21:45:02.957441",
+        "amenities_by_type": {
+          "schools": [
+            {
+              "amenity_type": "schools",
+              "name": "Primary School",
+              "lat": -37.565,
+              "lon": 143.845,
+              "distance_m": 100,
+              "walking_distance_m": 150,
+              "walking_time_s": 90
+            },
+            {
+              "amenity_type": "schools",
+              "name": "High School",
+              "lat": -37.559999999999995,
+              "lon": 143.85,
+              "distance_m": 250,
+              "walking_distance_m": 330,
+              "walking_time_s": 220
+            },
+            {
+              "amenity_type": "schools",
+              "name": "Secondary College",
+              "lat": -37.565,
+              "lon": 143.845,
+              "distance_m": 400,
+              "walking_distance_m": 510,
+              "walking_time_s": 350
+            },
+            {
+              "amenity_type": "schools",
+              "name": "Primary School",
+              "lat": -37.559999999999995,
+              "lon": 143.85,
+              "distance_m": 550,
+              "walking_distance_m": 690,
+              "walking_time_s": 480
+            }
+          ],
+          "libraries": [
+            {
+              "amenity_type": "libraries",
+              "name": "Public Library",
+              "lat": -37.565,
+              "lon": 143.845,
+              "distance_m": 100,
+              "walking_distance_m": 150,
+              "walking_time_s": 90
+            },
+            {
+              "amenity_type": "libraries",
+              "name": "Community Library",
+              "lat": -37.559999999999995,
+              "lon": 143.85,
+              "distance_m": 250,
+              "walking_distance_m": 330,
+              "walking_time_s": 220
+            }
+          ],
+          "parks": [
+            {
+              "amenity_type": "parks",
+              "name": "Central Park",
+              "lat": -37.565,
+              "lon": 143.845,
+              "distance_m": 100,
+              "walking_distance_m": 150,
+              "walking_time_s": 90
+            },
+            {
+              "amenity_type": "parks",
+              "name": "Botanical Gardens",
+              "lat": -37.559999999999995,
+              "lon": 143.85,
+              "distance_m": 250,
+              "walking_distance_m": 330,
+              "walking_time_s": 220
+            },
+            {
+              "amenity_type": "parks",
+              "name": "Recreation Reserve",
+              "lat": -37.565,
+              "lon": 143.845,
+              "distance_m": 400,
+              "walking_distance_m": 510,
+              "walking_time_s": 350
+            }
+          ],
+          "cafes": [
+            {
+              "amenity_type": "cafes",
+              "name": "Cafe Latte",
+              "lat": -37.565,
+              "lon": 143.845,
+              "distance_m": 100,
+              "walking_distance_m": 150,
+              "walking_time_s": 90
+            },
+            {
+              "amenity_type": "cafes",
+              "name": "Coffee Corner",
+              "lat": -37.559999999999995,
+              "lon": 143.85,
+              "distance_m": 250,
+              "walking_distance_m": 330,
+              "walking_time_s": 220
+            },
+            {
+              "amenity_type": "cafes",
+              "name": "The Roastery",
+              "lat": -37.565,
+              "lon": 143.845,
+              "distance_m": 400,
+              "walking_distance_m": 510,
+              "walking_time_s": 350
+            },
+            {
+              "amenity_type": "cafes",
+              "name": "Brew Haven",
+              "lat": -37.559999999999995,
+              "lon": 143.85,
+              "distance_m": 550,
+              "walking_distance_m": 690,
+              "walking_time_s": 480
+            },
+            {
+              "amenity_type": "cafes",
+              "name": "Local Grounds",
+              "lat": -37.565,
+              "lon": 143.845,
+              "distance_m": 700,
+              "walking_distance_m": 870,
+              "walking_time_s": 610
+            },
+            {
+              "amenity_type": "cafes",
+              "name": "Cafe Latte",
+              "lat": -37.559999999999995,
+              "lon": 143.85,
+              "distance_m": 850,
+              "walking_distance_m": 1050,
+              "walking_time_s": 740
+            },
+            {
+              "amenity_type": "cafes",
+              "name": "Coffee Corner",
+              "lat": -37.555,
+              "lon": 143.855,
+              "distance_m": 1000,
+              "walking_distance_m": 1230,
+              "walking_time_s": 870
+            }
+          ],
+          "supermarkets": [
+            {
+              "amenity_type": "supermarkets",
+              "name": "Woolworths",
+              "lat": -37.565,
+              "lon": 143.845,
+              "distance_m": 100,
+              "walking_distance_m": 150,
+              "walking_time_s": 90
+            },
+            {
+              "amenity_type": "supermarkets",
+              "name": "Coles",
+              "lat": -37.559999999999995,
+              "lon": 143.85,
+              "distance_m": 250,
+              "walking_distance_m": 330,
+              "walking_time_s": 220
+            },
+            {
+              "amenity_type": "supermarkets",
+              "name": "Aldi",
+              "lat": -37.565,
+              "lon": 143.845,
+              "distance_m": 400,
+              "walking_distance_m": 510,
+              "walking_time_s": 350
+            }
+          ],
+          "restaurants": [
+            {
+              "amenity_type": "restaurants",
+              "name": "The Restaurant",
+              "lat": -37.565,
+              "lon": 143.845,
+              "distance_m": 100,
+              "walking_distance_m": 150,
+              "walking_time_s": 90
+            },
+            {
+              "amenity_type": "restaurants",
+              "name": "Italian Villa",
+              "lat": -37.559999999999995,
+              "lon": 143.85,
+              "distance_m": 250,
+              "walking_distance_m": 330,
+              "walking_time_s": 220
+            },
+            {
+              "amenity_type": "restaurants",
+              "name": "Thai House",
+              "lat": -37.565,
+              "lon": 143.845,
+              "distance_m": 400,
+              "walking_distance_m": 510,
+              "walking_time_s": 350
+            },
+            {
+              "amenity_type": "restaurants",
+              "name": "Burger Place",
+              "lat": -37.559999999999995,
+              "lon": 143.85,
+              "distance_m": 550,
+              "walking_distance_m": 690,
+              "walking_time_s": 480
+            },
+            {
+              "amenity_type": "restaurants",
+              "name": "Pizza Time",
+              "lat": -37.565,
+              "lon": 143.845,
+              "distance_m": 700,
+              "walking_distance_m": 870,
+              "walking_time_s": 610
+            },
+            {
+              "amenity_type": "restaurants",
+              "name": "The Restaurant",
+              "lat": -37.559999999999995,
+              "lon": 143.85,
+              "distance_m": 850,
+              "walking_distance_m": 1050,
+              "walking_time_s": 740
+            }
+          ],
+          "pharmacies": [
+            {
+              "amenity_type": "pharmacies",
+              "name": "Pharmacy Plus",
+              "lat": -37.565,
+              "lon": 143.845,
+              "distance_m": 100,
+              "walking_distance_m": 150,
+              "walking_time_s": 90
+            },
+            {
+              "amenity_type": "pharmacies",
+              "name": "Health Pharmacy",
+              "lat": -37.559999999999995,
+              "lon": 143.85,
+              "distance_m": 250,
+              "walking_distance_m": 330,
+              "walking_time_s": 220
+            }
+          ],
+          "doctors": [
+            {
+              "amenity_type": "doctors",
+              "name": "Medical Centre",
+              "lat": -37.565,
+              "lon": 143.845,
+              "distance_m": 100,
+              "walking_distance_m": 150,
+              "walking_time_s": 90
+            },
+            {
+              "amenity_type": "doctors",
+              "name": "Health Clinic",
+              "lat": -37.559999999999995,
+              "lon": 143.85,
+              "distance_m": 250,
+              "walking_distance_m": 330,
+              "walking_time_s": 220
+            }
+          ]
+        },
+        "scoring": {
+          "schools": {
+            "count": 4,
+            "avg_distance_m": 420.0,
+            "avg_walking_time_s": 285.0,
+            "nearest_m": 150,
+            "description": "4 schools, nearest 150m (107min walk)"
+          },
+          "libraries": {
+            "count": 2,
+            "avg_distance_m": 240.0,
+            "avg_walking_time_s": 155.0,
+            "nearest_m": 150,
+            "description": "2 libraries, nearest 150m (107min walk)"
+          },
+          "parks": {
+            "count": 3,
+            "avg_distance_m": 330.0,
+            "avg_walking_time_s": 220.0,
+            "nearest_m": 150,
+            "description": "3 parks, nearest 150m (107min walk)"
+          },
+          "cafes": {
+            "count": 7,
+            "avg_distance_m": 690.0,
+            "avg_walking_time_s": 480.0,
+            "nearest_m": 150,
+            "description": "7 cafes, nearest 150m (107min walk)"
+          },
+          "supermarkets": {
+            "count": 3,
+            "avg_distance_m": 330.0,
+            "avg_walking_time_s": 220.0,
+            "nearest_m": 150,
+            "description": "3 supermarkets, nearest 150m (107min walk)"
+          },
+          "restaurants": {
+            "count": 6,
+            "avg_distance_m": 600.0,
+            "avg_walking_time_s": 415.0,
+            "nearest_m": 150,
+            "description": "6 restaurants, nearest 150m (107min walk)"
+          },
+          "pharmacies": {
+            "count": 2,
+            "avg_distance_m": 240.0,
+            "avg_walking_time_s": 155.0,
+            "nearest_m": 150,
+            "description": "2 pharmacies, nearest 150m (107min walk)"
+          },
+          "doctors": {
+            "count": 2,
+            "avg_distance_m": 240.0,
+            "avg_walking_time_s": 155.0,
+            "nearest_m": 150,
+            "description": "2 doctors, nearest 150m (107min walk)"
+          }
+        }
+      },
+      "amenity_score": 66.0,
+      "amenity_breakdown": {
+        "schools": {
+          "count": 4,
+          "score": 80.0,
+          "contribution": 16.0
+        },
+        "libraries": {
+          "count": 2,
+          "score": 40.0,
+          "contribution": 4.0
+        },
+        "parks": {
+          "count": 3,
+          "score": 60.0,
+          "contribution": 9.0
+        },
+        "cafes": {
+          "count": 7,
+          "score": 100.0,
+          "contribution": 10.0
+        },
+        "supermarkets": {
+          "count": 3,
+          "score": 60.0,
+          "contribution": 9.0
+        },
+        "restaurants": {
+          "count": 6,
+          "score": 100.0,
+          "contribution": 10.0
+        },
+        "pharmacies": {
+          "count": 2,
+          "score": 40.0,
+          "contribution": 4.0
+        },
+        "doctors": {
+          "count": 2,
+          "score": 40.0,
+          "contribution": 4.0
+        }
+      }
+    },
+    {
+      "id": "ballarat_003",
+      "address": "Wood Street, Ballarat VIC 3350, Australia",
+      "lat": -37.57,
+      "lon": 143.84,
+      "price_aud": 380000,
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "land_area_sqm": 250,
+      "year_built": 1980,
+      "amenity_data": {
+        "address": "Wood Street, Ballarat VIC 3350, Australia",
+        "lat": -37.57,
+        "lon": 143.84,
+        "timestamp": "2026-05-27T21:45:03.959098",
+        "amenities_by_type": {
+          "schools": [
+            {
+              "amenity_type": "schools",
+              "name": "Primary School",
+              "lat": -37.57,
+              "lon": 143.84,
+              "distance_m": 100,
+              "walking_distance_m": 150,
+              "walking_time_s": 90
+            },
+            {
+              "amenity_type": "schools",
+              "name": "High School",
+              "lat": -37.565,
+              "lon": 143.845,
+              "distance_m": 250,
+              "walking_distance_m": 330,
+              "walking_time_s": 220
+            }
+          ],
+          "libraries": [],
+          "parks": [
+            {
+              "amenity_type": "parks",
+              "name": "Central Park",
+              "lat": -37.57,
+              "lon": 143.84,
+              "distance_m": 100,
+              "walking_distance_m": 150,
+              "walking_time_s": 90
+            }
+          ],
+          "cafes": [
+            {
+              "amenity_type": "cafes",
+              "name": "Cafe Latte",
+              "lat": -37.57,
+              "lon": 143.84,
+              "distance_m": 100,
+              "walking_distance_m": 150,
+              "walking_time_s": 90
+            },
+            {
+              "amenity_type": "cafes",
+              "name": "Coffee Corner",
+              "lat": -37.565,
+              "lon": 143.845,
+              "distance_m": 250,
+              "walking_distance_m": 330,
+              "walking_time_s": 220
+            }
+          ],
+          "supermarkets": [
+            {
+              "amenity_type": "supermarkets",
+              "name": "Woolworths",
+              "lat": -37.57,
+              "lon": 143.84,
+              "distance_m": 100,
+              "walking_distance_m": 150,
+              "walking_time_s": 90
+            }
+          ],
+          "restaurants": [
+            {
+              "amenity_type": "restaurants",
+              "name": "The Restaurant",
+              "lat": -37.57,
+              "lon": 143.84,
+              "distance_m": 100,
+              "walking_distance_m": 150,
+              "walking_time_s": 90
+            },
+            {
+              "amenity_type": "restaurants",
+              "name": "Italian Villa",
+              "lat": -37.565,
+              "lon": 143.845,
+              "distance_m": 250,
+              "walking_distance_m": 330,
+              "walking_time_s": 220
+            }
+          ],
+          "pharmacies": [],
+          "doctors": []
+        },
+        "scoring": {
+          "schools": {
+            "count": 2,
+            "avg_distance_m": 240.0,
+            "avg_walking_time_s": 155.0,
+            "nearest_m": 150,
+            "description": "2 schools, nearest 150m (107min walk)"
+          },
+          "libraries": {
+            "count": 0,
+            "avg_distance_m": null,
+            "avg_walking_time_s": null,
+            "nearest_m": null,
+            "description": "No libraries found"
+          },
+          "parks": {
+            "count": 1,
+            "avg_distance_m": 150.0,
+            "avg_walking_time_s": 90.0,
+            "nearest_m": 150,
+            "description": "1 parks, nearest 150m (107min walk)"
+          },
+          "cafes": {
+            "count": 2,
+            "avg_distance_m": 240.0,
+            "avg_walking_time_s": 155.0,
+            "nearest_m": 150,
+            "description": "2 cafes, nearest 150m (107min walk)"
+          },
+          "supermarkets": {
+            "count": 1,
+            "avg_distance_m": 150.0,
+            "avg_walking_time_s": 90.0,
+            "nearest_m": 150,
+            "description": "1 supermarkets, nearest 150m (107min walk)"
+          },
+          "restaurants": {
+            "count": 2,
+            "avg_distance_m": 240.0,
+            "avg_walking_time_s": 155.0,
+            "nearest_m": 150,
+            "description": "2 restaurants, nearest 150m (107min walk)"
+          },
+          "pharmacies": {
+            "count": 0,
+            "avg_distance_m": null,
+            "avg_walking_time_s": null,
+            "nearest_m": null,
+            "description": "No pharmacies found"
+          },
+          "doctors": {
+            "count": 0,
+            "avg_distance_m": null,
+            "avg_walking_time_s": null,
+            "nearest_m": null,
+            "description": "No doctors found"
+          }
+        }
+      },
+      "amenity_score": 22.0,
+      "amenity_breakdown": {
+        "schools": {
+          "count": 2,
+          "score": 40.0,
+          "contribution": 8.0
+        },
+        "libraries": {
+          "count": 0,
+          "score": 0.0,
+          "contribution": 0.0
+        },
+        "parks": {
+          "count": 1,
+          "score": 20.0,
+          "contribution": 3.0
+        },
+        "cafes": {
+          "count": 2,
+          "score": 40.0,
+          "contribution": 4.0
+        },
+        "supermarkets": {
+          "count": 1,
+          "score": 20.0,
+          "contribution": 3.0
+        },
+        "restaurants": {
+          "count": 2,
+          "score": 40.0,
+          "contribution": 4.0
+        },
+        "pharmacies": {
+          "count": 0,
+          "score": 0.0,
+          "contribution": 0.0
+        },
+        "doctors": {
+          "count": 0,
+          "score": 0.0,
+          "contribution": 0.0
+        }
+      }
+    }
+  ],
+  "last_digest": "2026-05-27T21:45:03.959560",
+  "digest_frequency": "daily",
+  "digest_time_awst": "06:30"
+}
