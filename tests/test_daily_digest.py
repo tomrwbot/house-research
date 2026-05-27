@@ -43,6 +43,7 @@ class TestDigestGenerator:
                         "bathrooms": 1,
                         "land_area_sqm": 350,
                         "year_built": 2000,
+                        "url": "https://www.realestate.com.au/property-house-vic-3350-test001",
                         "amenity_data": None
                     }
                 ],
@@ -171,6 +172,7 @@ class TestDigestFormatting:
                         "bathrooms": 2,
                         "land_area_sqm": 600,
                         "year_built": 2005,
+                        "url": "https://www.realestate.com.au/property-house-vic-3350-test001",
                         "amenity_data": None
                     },
                     {
@@ -183,6 +185,7 @@ class TestDigestFormatting:
                         "bathrooms": 1,
                         "land_area_sqm": 250,
                         "year_built": 1980,
+                        "url": "https://www.realestate.com.au/property-house-vic-3350-test002",
                         "amenity_data": None
                     }
                 ],
@@ -224,6 +227,14 @@ class TestDigestFormatting:
         
         assert "Total Properties: 2" in digest
         assert "Average Amenity Score" in digest
+    
+    def test_digest_includes_property_urls(self, generator):
+        """Test digest includes clickable property URLs as markdown links"""
+        digest = generator.generate_digest()
+        
+        # Check that URLs are formatted as markdown links
+        assert "[Main Road, Ballarat VIC](https://www.realestate.com.au/property-house-vic-3350-test001)" in digest
+        assert "[Wood Street, Ballarat VIC](https://www.realestate.com.au/property-house-vic-3350-test002)" in digest
 
 
 class TestCaching:

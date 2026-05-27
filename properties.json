@@ -207,57 +207,57 @@
         "scoring": {
           "schools": {
             "count": 3,
-            "avg_distance_m": 330.0,
-            "avg_walking_time_s": 220.0,
+            "avg_distance_m": 330,
+            "avg_walking_time_s": 220,
             "nearest_m": 150,
             "description": "3 schools, nearest 150m (107min walk)"
           },
           "libraries": {
             "count": 1,
-            "avg_distance_m": 150.0,
-            "avg_walking_time_s": 90.0,
+            "avg_distance_m": 150,
+            "avg_walking_time_s": 90,
             "nearest_m": 150,
             "description": "1 libraries, nearest 150m (107min walk)"
           },
           "parks": {
             "count": 2,
-            "avg_distance_m": 240.0,
-            "avg_walking_time_s": 155.0,
+            "avg_distance_m": 240,
+            "avg_walking_time_s": 155,
             "nearest_m": 150,
             "description": "2 parks, nearest 150m (107min walk)"
           },
           "cafes": {
             "count": 5,
-            "avg_distance_m": 510.0,
-            "avg_walking_time_s": 350.0,
+            "avg_distance_m": 510,
+            "avg_walking_time_s": 350,
             "nearest_m": 150,
             "description": "5 cafes, nearest 150m (107min walk)"
           },
           "supermarkets": {
             "count": 2,
-            "avg_distance_m": 240.0,
-            "avg_walking_time_s": 155.0,
+            "avg_distance_m": 240,
+            "avg_walking_time_s": 155,
             "nearest_m": 150,
             "description": "2 supermarkets, nearest 150m (107min walk)"
           },
           "restaurants": {
             "count": 4,
-            "avg_distance_m": 420.0,
-            "avg_walking_time_s": 285.0,
+            "avg_distance_m": 420,
+            "avg_walking_time_s": 285,
             "nearest_m": 150,
             "description": "4 restaurants, nearest 150m (107min walk)"
           },
           "pharmacies": {
             "count": 1,
-            "avg_distance_m": 150.0,
-            "avg_walking_time_s": 90.0,
+            "avg_distance_m": 150,
+            "avg_walking_time_s": 90,
             "nearest_m": 150,
             "description": "1 pharmacies, nearest 150m (107min walk)"
           },
           "doctors": {
             "count": 1,
-            "avg_distance_m": 150.0,
-            "avg_walking_time_s": 90.0,
+            "avg_distance_m": 150,
+            "avg_walking_time_s": 90,
             "nearest_m": 150,
             "description": "1 doctors, nearest 150m (107min walk)"
           }
@@ -305,7 +305,8 @@
           "score": 20.0,
           "contribution": 2.0
         }
-      }
+      },
+      "url": "https://www.realestate.com.au/property-house-vic-3350-134891234"
     },
     {
       "id": "ballarat_002",
@@ -604,57 +605,57 @@
         "scoring": {
           "schools": {
             "count": 4,
-            "avg_distance_m": 420.0,
-            "avg_walking_time_s": 285.0,
+            "avg_distance_m": 420,
+            "avg_walking_time_s": 285,
             "nearest_m": 150,
             "description": "4 schools, nearest 150m (107min walk)"
           },
           "libraries": {
             "count": 2,
-            "avg_distance_m": 240.0,
-            "avg_walking_time_s": 155.0,
+            "avg_distance_m": 240,
+            "avg_walking_time_s": 155,
             "nearest_m": 150,
             "description": "2 libraries, nearest 150m (107min walk)"
           },
           "parks": {
             "count": 3,
-            "avg_distance_m": 330.0,
-            "avg_walking_time_s": 220.0,
+            "avg_distance_m": 330,
+            "avg_walking_time_s": 220,
             "nearest_m": 150,
             "description": "3 parks, nearest 150m (107min walk)"
           },
           "cafes": {
             "count": 7,
-            "avg_distance_m": 690.0,
-            "avg_walking_time_s": 480.0,
+            "avg_distance_m": 690,
+            "avg_walking_time_s": 480,
             "nearest_m": 150,
             "description": "7 cafes, nearest 150m (107min walk)"
           },
           "supermarkets": {
             "count": 3,
-            "avg_distance_m": 330.0,
-            "avg_walking_time_s": 220.0,
+            "avg_distance_m": 330,
+            "avg_walking_time_s": 220,
             "nearest_m": 150,
             "description": "3 supermarkets, nearest 150m (107min walk)"
           },
           "restaurants": {
             "count": 6,
-            "avg_distance_m": 600.0,
-            "avg_walking_time_s": 415.0,
+            "avg_distance_m": 600,
+            "avg_walking_time_s": 415,
             "nearest_m": 150,
             "description": "6 restaurants, nearest 150m (107min walk)"
           },
           "pharmacies": {
             "count": 2,
-            "avg_distance_m": 240.0,
-            "avg_walking_time_s": 155.0,
+            "avg_distance_m": 240,
+            "avg_walking_time_s": 155,
             "nearest_m": 150,
             "description": "2 pharmacies, nearest 150m (107min walk)"
           },
           "doctors": {
             "count": 2,
-            "avg_distance_m": 240.0,
-            "avg_walking_time_s": 155.0,
+            "avg_distance_m": 240,
+            "avg_walking_time_s": 155,
             "nearest_m": 150,
             "description": "2 doctors, nearest 150m (107min walk)"
           }
@@ -702,7 +703,8 @@
           "score": 40.0,
           "contribution": 4.0
         }
-      }
+      },
+      "url": "https://www.realestate.com.au/property-house-vic-3350-134891235"
     },
     {
       "id": "ballarat_003",
@@ -809,8 +811,8 @@
         "scoring": {
           "schools": {
             "count": 2,
-            "avg_distance_m": 240.0,
-            "avg_walking_time_s": 155.0,
+            "avg_distance_m": 240,
+            "avg_walking_time_s": 155,
             "nearest_m": 150,
             "description": "2 schools, nearest 150m (107min walk)"
           },
@@ -823,29 +825,29 @@
           },
           "parks": {
             "count": 1,
-            "avg_distance_m": 150.0,
-            "avg_walking_time_s": 90.0,
+            "avg_distance_m": 150,
+            "avg_walking_time_s": 90,
             "nearest_m": 150,
             "description": "1 parks, nearest 150m (107min walk)"
           },
           "cafes": {
             "count": 2,
-            "avg_distance_m": 240.0,
-            "avg_walking_time_s": 155.0,
+            "avg_distance_m": 240,
+            "avg_walking_time_s": 155,
             "nearest_m": 150,
             "description": "2 cafes, nearest 150m (107min walk)"
           },
           "supermarkets": {
             "count": 1,
-            "avg_distance_m": 150.0,
-            "avg_walking_time_s": 90.0,
+            "avg_distance_m": 150,
+            "avg_walking_time_s": 90,
             "nearest_m": 150,
             "description": "1 supermarkets, nearest 150m (107min walk)"
           },
           "restaurants": {
             "count": 2,
-            "avg_distance_m": 240.0,
-            "avg_walking_time_s": 155.0,
+            "avg_distance_m": 240,
+            "avg_walking_time_s": 155,
             "nearest_m": 150,
             "description": "2 restaurants, nearest 150m (107min walk)"
           },
@@ -910,7 +912,7 @@
       }
     }
   ],
-  "last_digest": "2026-05-27T21:45:03.959560",
+  "last_digest": "2026-05-27T22:50:19.590254",
   "digest_frequency": "daily",
   "digest_time_awst": "06:30"
 }

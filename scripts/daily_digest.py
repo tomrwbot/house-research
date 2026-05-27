@@ -254,8 +254,15 @@ class DigestGenerator:
             bedrooms = prop.get('bedrooms', '?')
             bathrooms = prop.get('bathrooms', '?')
             amenity_score = prop.get('amenity_score', 0)
+            url = prop.get('url')
             
-            digest_lines.append(f"\n[{i}] {address}")
+            # Format property title with optional URL link
+            if url:
+                property_title = f"[{i}] [{address}]({url})"
+            else:
+                property_title = f"[{i}] {address}"
+            
+            digest_lines.append(f"\n{property_title}")
             digest_lines.append(f"    {'─' * 76}")
             digest_lines.append(
                 f"    Price: ${price:,} AUD | "
